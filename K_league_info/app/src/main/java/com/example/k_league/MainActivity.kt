@@ -1,10 +1,8 @@
-package com.example.k_league_info
+package com.example.k_league
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -27,4 +25,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(nextIntent)
         }
     }
+}
 }

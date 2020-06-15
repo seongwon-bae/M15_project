@@ -1,2 +1,2 @@
-rootProject.name='K_league_info'
 include ':app'
+rootProject.name = "K_league"

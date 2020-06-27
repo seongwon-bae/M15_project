@@ -1,20 +1,22 @@
 package com.example.k_league
 
 import android.content.Intent
+import android.media.Image
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.ImageButton
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
-class teamScreen : AppCompatActivity() {
+class teamScreenActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.team_screen)
 
-        ImageView gangwon = new 
-        imageView.setOnClickListener(new View.onClickListener(){
+        val selected_button = findViewById<ImageButton>(R.id.gangwon)
+        selected_button.setOnClickListener {
+            val nextIntent = Intent(this, teamdetailScreenActivity)
+            startActivity(nextIntent)
+        }
 
-        })
     }
 }

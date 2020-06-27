@@ -13,15 +13,15 @@ class MainActivity : AppCompatActivity() {
 
 
         score.setOnClickListener {
-            val nextIntent = Intent(this, scoreScreen::class.java)
+            val nextIntent = Intent(this, scoreScreenActivity::class.java)
             startActivity(nextIntent)
         }
         team.setOnClickListener {
-            val nextIntent = Intent(this, teamScreen::class.java)
+            val nextIntent = Intent(this, teamScreenActivity::class.java)
             startActivity(nextIntent)
         }
         community.setOnClickListener {
-            val nextIntent = Intent(this, communityScreen::class.java)
+            val nextIntent = Intent(this, communityScreenActivity::class.java)
             startActivity(nextIntent)
         }
     }

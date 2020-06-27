@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.k_league">
 
+    <uses-permisson android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".teamScreenActivity"></activity>
+        <activity android:name=".scoreScreenActivity"></activity>
+        <activity android:name=".teamdetailScreenActivity"></activity>
 
     </application>
 

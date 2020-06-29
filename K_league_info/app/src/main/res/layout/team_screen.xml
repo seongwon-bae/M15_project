@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
@@ -11,10 +12,9 @@
         android:layout_gravity="bottom"
         android:layout_marginBottom="675dp"
         android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
     <fragment
@@ -30,144 +30,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teamscreen_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/seoul_fc"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/seoul" />
 
-                <ImageButton
-                    android:id="@+id/jeonbuk"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/jeonbukhyundai" />
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/seongnam"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/seongnam" />
-
-                <ImageButton
-                    android:id="@+id/gangwon"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/gangwon" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/daegu"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/daegu" />
-
-                <ImageButton
-                    android:id="@+id/busan"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/busan" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/ulsan"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ulsan" />
-
-                <ImageButton
-                    android:id="@+id/suwon"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/suwon_bluewings" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/incheon"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/incheon" />
-
-                <ImageButton
-                    android:id="@+id/gwangju"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/gwangju" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/pohang"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/pohang" />
-
-                <ImageButton
-                    android:id="@+id/sangju"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/sangju" />
-            </LinearLayout>
 
 
         </LinearLayout>
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

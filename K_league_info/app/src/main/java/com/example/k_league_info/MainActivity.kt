@@ -3,8 +3,6 @@ package com.example.k_league_info
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
 
         score.setOnClickListener {
-            val nextIntent = Intent(this, scoreScreen::class.java)
+            val nextIntent = Intent(this, ScoreScreen::class.java)
             startActivity(nextIntent)
         }
         team.setOnClickListener {

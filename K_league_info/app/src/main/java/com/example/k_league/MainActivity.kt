@@ -1,8 +1,8 @@
-package com.example.k_league_info
+package com.example.k_league
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,16 +13,17 @@ class MainActivity : AppCompatActivity() {
 
 
         score.setOnClickListener {
-            val nextIntent = Intent(this, ScoreScreen::class.java)
+            val nextIntent = Intent(this, scoreScreenActivity::class.java)
             startActivity(nextIntent)
         }
         team.setOnClickListener {
-            val nextIntent = Intent(this, teamScreen::class.java)
+            val nextIntent = Intent(this, teamScreenActivity::class.java)
             startActivity(nextIntent)
         }
         community.setOnClickListener {
-            val nextIntent = Intent(this, communityScreen::class.java)
+            val nextIntent = Intent(this, communityScreenActivity::class.java)
             startActivity(nextIntent)
         }
     }
+}
 }

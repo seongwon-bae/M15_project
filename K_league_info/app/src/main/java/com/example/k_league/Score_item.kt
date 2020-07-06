@@ -1,4 +1,4 @@
-package com.example.k_league_info
+package com.example.k_league
 
 // 일단 표시해야하는 목록을 가진 item
 class Score_item (

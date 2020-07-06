@@ -1,4 +1,4 @@
-package com.example.k_league_info
+package com.example.k_league
 
 import android.content.Context
 import android.view.LayoutInflater

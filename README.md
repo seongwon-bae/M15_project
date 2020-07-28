@@ -12,7 +12,7 @@ Data will stored at the cloud(AWS).
 down load .apk file (not uploaded yet) at your moblie machine.
 
 # About Branch
- > master : version_*** / upload only finished files<b>
+ > master : version_*** / upload only finished files<br>
  > develop : where we usually work
 
 # ETC.

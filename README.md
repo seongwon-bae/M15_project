@@ -11,6 +11,10 @@ Data will stored at the cloud(AWS).
 # How to Use
 down load .apk file (not uploaded yet) at your moblie machine.
 
+# About Branch
+ > master : version_*** / upload only finished files
+ > develop : where we usually work
+
 # ETC.
 MIT License
 

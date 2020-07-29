@@ -1,40 +1,61 @@
 package com.example.k_league
 
-import android.content.AbstractThreadedSyncAdapter
-import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 
 class teamScreenActivity : AppCompatActivity() {
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var viewAdapter: RecyclerView.Adapter<*>
-    private lateinit var viewManager: RecyclerView.LayoutManager
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.team_screen)
 
-        viewManager = GridLayoutManager(this)
-        viewAdapter = MyAdapter(myDataset)
+        // 1
+        val selectGangwon = findViewById<ImageButton>(R.id.gangwonImagebutton)
+        selectGangwon.setOnClickListener {  }
 
-        recyclerView = findViewById<RecyclerView>(R.id.teamscreen_recycler_view).apply{
-            setHasFixedSize(true)
+        // 2
+        val selectBusan = findViewById<ImageButton>(R.id.busanImagebutton)
+        selectBusan.setOnClickListener{  }
 
-            layoutManager = viewManager
+        // 3
+        val selectDaegu = findViewById<ImageButton>(R.id.daeguImagebutton)
+        selectDaegu.setOnClickListener {  }
 
-            adapter = viewAdapter
-        }
+        // 4
+        val selectGwangju = findViewById<ImageButton>(R.id.gwangjuImagebutton)
+        selectGwangju.setOnClickListener{  }
 
-        val selected_button = findViewById<ImageButton>(R.id.gangwon)
-        selected_button.setOnClickListener {
-            val nextIntent = Intent(this, teamdetailScreenActivity)
-            startActivity(nextIntent)
-        }
+        // 5
+        val selectIncheon =findViewById<ImageButton>(R.id.incheonImagebutton)
+        selectIncheon.setOnClickListener {  }
+
+        // 6
+        val selectJeju = findViewById<ImageButton>(R.id.jejuImagebutton)
+        selectJeju.setOnClickListener {  }
+
+        // 7
+        val selectJeonnam = findViewById<ImageButton>(R.id.jeonnamImagebutton)
+        selectJeonnam.setOnClickListener {  }
+
+        // 8
+        val selectPohang = findViewById<ImageButton>(R.id.pohangImagebutton)
+        selectPohang.setOnClickListener {  }
+
+        // 9
+        val selectSangju = findViewById<ImageButton>(R.id.sangjuImagebutton)
+        selectSangju.setOnClickListener {  }
+
+        // 10
+        val selectSeongnam = findViewById<ImageButton>(R.id.seoulImagebutton)
+        selectSeongnam.setOnClickListener {  }
+
+        // 11
+        val selectSeoul = findViewById<ImageButton>(R.id.seoulImagebutton)
+        selectSeoul.setOnClickListener {  }
+
+        // 12
+        val selectUlsan = findViewById<ImageButton>(R.id.ulsanImagebutton)
+        selectUlsan.setOnClickListener {  }
 
     }
 }

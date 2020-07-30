@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.k_league">
 
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".communityScreen"></activity>
+        <activity android:name=".postScreen"></activity>
+        <activity android:name=".postWrite"></activity>
+
         <activity android:name=".teamScreenActivity"></activity>
         <activity android:name=".teamdetailScreenActivity"></activity>
 

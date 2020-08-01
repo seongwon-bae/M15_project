@@ -30,7 +30,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,28 +82,33 @@
                 android:id="@+id/team_manager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="FW" />
+                android:text="STAFF"
+                android:textAlignment="center" />
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <HorizontalScrollView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageButton
-                    android:id="@+id/imageView"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/gk_lee" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/staffRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <TextView
                 android:id="@+id/team_fw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="FW" />
+                android:text="FW"
+                android:textAlignment="center" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -113,21 +119,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
-                    <ImageButton
-                        android:id="@+id/imageView"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/gk_lee" />
-
-                    <ImageButton
-                        android:id="@+id/imageView"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/gk_lee" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fwRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -135,7 +130,8 @@
                 android:id="@+id/team_mf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MF" />
+                android:text="MF"
+                android:textAlignment="center" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -146,21 +142,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/gk_lee" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/mfRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
 
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/gk_lee" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -168,7 +155,8 @@
                 android:id="@+id/team_df"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DF" />
+                android:text="DF"
+                android:textAlignment="center" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -179,20 +167,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/gk_lee" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/dfRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
 
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/gk_lee" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -200,7 +180,8 @@
                 android:id="@+id/team_gk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="GL" />
+                android:text="GL"
+                android:textAlignment="center" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -211,21 +192,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/gk_lee" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/gkRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
 
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/gk_lee" />
                 </LinearLayout>
             </HorizontalScrollView>
 

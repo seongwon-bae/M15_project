@@ -1,8 +1,10 @@
 package com.example.k_league
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.team_screen.*
 
 class teamScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,30 +12,45 @@ class teamScreenActivity : AppCompatActivity() {
         setContentView(R.layout.team_screen)
 
         // 1
-        val selectGangwon = findViewById<ImageButton>(R.id.gangwonImagebutton)
-        selectGangwon.setOnClickListener {  }
+        gangwonImagebutton.setOnClickListener{
+            val nextIntent:Intent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 2
-        val selectBusan = findViewById<ImageButton>(R.id.busanImagebutton)
-        selectBusan.setOnClickListener{  }
+        busanImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 3
-        val selectDaegu = findViewById<ImageButton>(R.id.daeguImagebutton)
-        selectDaegu.setOnClickListener {  }
+        daeguImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 4
-        val selectGwangju = findViewById<ImageButton>(R.id.gwangjuImagebutton)
-        selectGwangju.setOnClickListener{  }
+        gwangjuImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 5
-        val selectIncheon =findViewById<ImageButton>(R.id.incheonImagebutton)
-        selectIncheon.setOnClickListener {  }
+        incheonImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 6
-        val selectJeju = findViewById<ImageButton>(R.id.jejuImagebutton)
-        selectJeju.setOnClickListener {  }
+        jejuImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 7
+        jeonnamImagebutton.setOnClickListener {
+            val nextIntent = Intent()
+        }
         val selectJeonnam = findViewById<ImageButton>(R.id.jeonnamImagebutton)
         selectJeonnam.setOnClickListener {  }
 

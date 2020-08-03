@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ScoreScreen">
+    tools:context=".ScoreDetailScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,6 +54,55 @@
 
     </LinearLayout>
 //레이아웃을 통해 인덱스 접근마다 다른 형태의 설정을 같고 아이템의 내용을 변경.
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shooting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shooting" />
+
+                <TextView
+                    android:id="@+id/shootingNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/effectiveShooting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EffectiveShooting" />
+
+                <TextView
+                    android:id="@+id/effectiveShootingNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"

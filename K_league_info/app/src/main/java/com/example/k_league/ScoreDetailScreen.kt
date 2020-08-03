@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_score_screen.*
 
-class ScoreScreen : AppCompatActivity() {
+class ScoreDetailScreen : AppCompatActivity() {
 
     var scoreList = arrayListOf<Score_item>(
         Score_item("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12")

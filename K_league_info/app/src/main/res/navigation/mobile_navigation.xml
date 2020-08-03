@@ -3,23 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_score">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.k_league.ui.home.HomeFragment"
+        android:id="@+id/navigation_score"
+        android:name="com.example.k_league.ui.score.Score"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_score">
+        <action android:id="@+id/action_score_to_team"
+            app:destination="@+id/team"/>
+        <action android:id="@+id/action_score_to_community"
+            app:destination="@+id/community"/>
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.k_league.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_team"
+        android:name="com.example.k_league.ui.team.Team"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_team" />
+        tools:layout="@layout/fragment_team">
+        <action android:id="@+id/action_team_to_score"
+            app:destination="@+id/score"/>
+        <action android:id="@+id/action_team_to_community"
+            app:destination="@+id/community"/>
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.k_league.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_community"
+        android:name="com.example.k_league.ui.community.Community"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_community">
+        <action android:id="@+id/action_community_to_score"
+            app:destination="@+id/score"/>
+        <action android:id="@+id/action_community_to_team"
+            app:destination="@+id/team"/>
+    </fragment>
 </navigation>

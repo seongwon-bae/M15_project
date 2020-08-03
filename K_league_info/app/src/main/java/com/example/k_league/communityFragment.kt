@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.fragment_bestcommunity.*
 import kotlinx.android.synthetic.main.fragment_community.*
 /*
     전체글 화면을 출력하기 위한 프래그먼트

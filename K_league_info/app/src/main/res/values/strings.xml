@@ -1,15 +1,8 @@
 <resources>
     <string name="app_name">K_league</string>
-<<<<<<< HEAD
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-
     <string name="fw_01">Son</string>
     <string name="mf_01">Gangin</string>
-=======
     <string name="title_home">Score</string>
     <string name="title_dashboard">Team</string>
     <string name="title_notifications">Community</string>
->>>>>>> b841ef2b4f0216b05c32fd6ea896e790413f4be9
 </resources>

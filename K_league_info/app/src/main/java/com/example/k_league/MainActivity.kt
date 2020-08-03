@@ -3,7 +3,7 @@ package com.example.k_league
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+<<<<<<< HEAD
 /*
         score.setOnClickListener {
             val nextIntent = Intent(this, ScoreScreen::class.java)
@@ -28,3 +29,9 @@ class MainActivity : AppCompatActivity() {
  */
     }
 }
+=======
+
+    }
+
+}
+>>>>>>> b841ef2b4f0216b05c32fd6ea896e790413f4be9

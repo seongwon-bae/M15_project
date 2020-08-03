@@ -49,30 +49,38 @@ class teamScreenActivity : AppCompatActivity() {
 
         // 7
         jeonnamImagebutton.setOnClickListener {
-            val nextIntent = Intent()
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
         }
-        val selectJeonnam = findViewById<ImageButton>(R.id.jeonnamImagebutton)
-        selectJeonnam.setOnClickListener {  }
 
         // 8
-        val selectPohang = findViewById<ImageButton>(R.id.pohangImagebutton)
-        selectPohang.setOnClickListener {  }
+        pohangImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 9
-        val selectSangju = findViewById<ImageButton>(R.id.sangjuImagebutton)
-        selectSangju.setOnClickListener {  }
+        sangjuImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 10
-        val selectSeongnam = findViewById<ImageButton>(R.id.seoulImagebutton)
-        selectSeongnam.setOnClickListener {  }
+        ulsanImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 11
-        val selectSeoul = findViewById<ImageButton>(R.id.seoulImagebutton)
-        selectSeoul.setOnClickListener {  }
+        seoulImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
 
         // 12
-        val selectUlsan = findViewById<ImageButton>(R.id.ulsanImagebutton)
-        selectUlsan.setOnClickListener {  }
-
+        ulsanImagebutton.setOnClickListener {
+            val nextIntent = Intent(this@teamScreenActivity, teamdetailScreenActivity::class.java)
+            startActivity(nextIntent)
+        }
     }
 }
